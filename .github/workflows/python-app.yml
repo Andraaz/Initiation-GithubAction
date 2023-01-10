@@ -33,3 +33,8 @@ jobs:
       continue-on-error: true
       run: |
         pylint main.py
+    - name : Dockerfile
+      runs:
+        using: 'docker'
+        image: 'Dockerfile'
+        
