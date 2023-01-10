@@ -5,10 +5,9 @@ class SimpleMath:
     @staticmethod
     def addition(x, y):
         return x + y
-
-@staticmethod
-def subtraction(x, y):
-    return x - y
+    @staticmethod
+    def subtraction(x, y):
+        return x - y
 
 class TestSimpleMath(unittest.TestCase):
     def test_addition(self):
