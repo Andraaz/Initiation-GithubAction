@@ -31,4 +31,4 @@ jobs:
         pytest main.py
     - name : Test with pylint
         pylint main.py
-        continue-on-error: true
+    continue-on-error: true
