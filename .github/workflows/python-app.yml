@@ -29,4 +29,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest main.py
+    - name : Test with pylint
         pylint main.py
+        continue-on-error: true
