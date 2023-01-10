@@ -1,3 +1,8 @@
+# GithubAction
+
+## Création du fichier python
+
+```py
 import unittest
 
 class SimpleMath:
@@ -19,3 +24,4 @@ class TestSimpleMath(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+```
