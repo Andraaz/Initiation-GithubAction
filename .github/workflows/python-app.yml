@@ -34,7 +34,7 @@ jobs:
       run: |
         pylint main.py
     - name : Dockerfile
-      runs:
+      run:
         using: 'docker'
         image: 'Dockerfile'
         
