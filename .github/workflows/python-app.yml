@@ -30,5 +30,6 @@ jobs:
       run: |
         pytest main.py
     - name : Test with pylint
-        continue-on-error: true
+      continue-on-error: true
+      run: |
         pylint main.py
