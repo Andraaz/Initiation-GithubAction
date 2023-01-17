@@ -33,9 +33,17 @@ jobs:
       continue-on-error: true
       run: |
         pylint main.py
-    - name : Dockerfile
-      run: 
-        uses: docker://docker
-        with:
-          args: build -t my-image:latest . && docker run --rm my-image:latest
-        
+    - name: Build and run Docker image
+      uses: docker://docker
+      with:
+        args:
+        - build
+        - -t
+        - my-image:latest
+        - .
+        - &&
+        - docker
+        - run
+        - --rm
+        - my-image:latest
+            
