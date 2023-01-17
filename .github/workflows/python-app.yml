@@ -34,16 +34,7 @@ jobs:
       run: |
         pylint main.py
     - name: Build and run Docker image
-      uses: docker://docker
+      uses: docker
       with:
-        args:
-        - build
-        - -t
-        - my-image:latest
-        - .
-        - &&
-        - docker
-        - run
-        - --rm
-        - my-image:latest
+        args: build -t my-image:latest . && docker run --rm my-image:latest
             
